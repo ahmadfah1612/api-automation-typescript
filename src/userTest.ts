@@ -1,9 +1,18 @@
 // src/userTest.ts
 import { expect } from 'chai';
 import ApiClient from './apiClient';
+import { createUserTestData } from './userTestData';
 
 describe('User API tests', () => {
   const apiClient = ApiClient.getInstance();
+
+  createUserTestData.forEach((data) => {
+    it(`should create a user with name "${data.name}" and job "${data.job}"`, async () => {
+      const response = await apiClient.createUser(data.name, data.job);
+      expect(response.name).to.equal(data.name);
+      expect(response.job).to.equal(data.job);
+    });
+  });
 
   it('should get user with id 2', async () => {
     const response = await apiClient.getUser(2);
