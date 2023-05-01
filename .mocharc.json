@@ -1,0 +1,8 @@
+{
+  "require": "ts-node/register",
+  "extension": ["ts"],
+  "spec": "src/**/*.ts",
+  "timeout": 10000,
+  "reporter": "allure-mocha",
+  "reporter-option": ["allure-results-dir=allure-results"]
+}
