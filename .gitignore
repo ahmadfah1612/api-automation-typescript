@@ -1,0 +1,8 @@
+/allure-reports/
+/allure-results/
+/venv/
+*.DS_Store
+*.xml
+/allure-report/
+/results/
+/node_modules

@@ -1,1 +1,0 @@
-[{"uid":"380a3aa00dd4e2c9","name":"should get user with id 2","time":{"start":1682956251292,"stop":1682956251392,"duration":100},"status":"passed","severity":"normal"},{"uid":"92c6a722cb44b99b","name":"should create a new user","time":{"start":1682956251393,"stop":1682956251664,"duration":271},"status":"passed","severity":"normal"}]

@@ -10,6 +10,21 @@ class ApiClient {
       baseURL: 'https://reqres.in/api/',
       timeout: 3000,
     });
+
+    this.apiClient.interceptors.request.use((request) => {
+        console.log(`Request: ${request.method?.toUpperCase()} ${request.url}`);
+        console.log(`Headers: ${JSON.stringify(request.headers)}`);
+        if (request.data) {
+          console.log(`Data: ${JSON.stringify(request.data)}`);
+        }
+        return request;
+      });
+      
+      this.apiClient.interceptors.response.use((response) => {
+        console.log(`Response: ${response.status} ${response.statusText}`);
+        console.log(`Data: ${JSON.stringify(response.data)}`);
+        return response;
+      });
   }
 
   public static getInstance(): ApiClient {

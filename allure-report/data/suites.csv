@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon May 01 22:50:51 CXT 2023","Mon May 01 22:50:51 CXT 2023","100","User API tests","","","","","should get user with id 2",""
-"passed","Mon May 01 22:50:51 CXT 2023","Mon May 01 22:50:51 CXT 2023","271","User API tests","","","","","should create a new user",""
